@@ -1,14 +1,29 @@
-pub fn add(left: u64, right: u64) -> u64 {
-    left + right
-}
+//! # Cowry 🐄💰
+//!
+//! A financial math library with support for currencies, precise rounding, and
+//! batch operations over monetary values using `Owo`.
 
-#[cfg(test)]
-mod tests {
-    use super::*;
+pub mod currency;
+pub mod error; 
+pub mod owo;
+pub mod rounding;
+pub mod traits; 
 
-    #[test]
-    fn it_works() {
-        let result = add(2, 2);
-        assert_eq!(result, 4);
-    }
+pub use crate::currency::Currency;
+pub use crate::owo::Owo;
+pub use crate::traits::BatchOperations;
+pub use crate::rounding::RoundingMode;
+
+// Setup prelude module
+pub mod prelude {
+    //! The Cowry Prelude
+    //!
+    //! ```
+    //! use cowry::prelude::*;
+    //! ```
+
+    pub use crate::Currency;
+    pub use crate::Owo;
+    pub use crate::RoundingMode;
+    pub use crate::BatchOperations;
 }
