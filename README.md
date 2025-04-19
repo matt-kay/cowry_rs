@@ -1,10 +1,9 @@
----
 
 # 💸 Cowry — A Precise Money Type in Rust
 
 `Cowry` is a robust and flexible money type written in Rust, designed to represent and manipulate monetary values accurately using minor units (like cents, kobo, or satoshi). It supports multiple currencies, rounding modes, arithmetic operations, formatting, and serialization.
 
----
+
 
 ---
 
