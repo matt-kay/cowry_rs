@@ -1,0 +1,19 @@
+[package]
+name = "cowry"
+version = "0.1.0"
+edition = "2024"
+authors = ["Mattosha <kayodematthew56@gmail.com>"]
+description = "A micro-library for precise currency math and rounding control in Rust."
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/matt-kay/cowry_rs.git"
+homepage = "https://github.com/matt-kay/cowry_rs.git"
+readme = "README.md"
+documentation = "https://docs.rs/cowry"
+keywords = ["currency", "finance", "money", "precision", "rounding"]
+categories = ["mathematics", "finance"]
+exclude = ["/.github", "/examples", "/target", "*.md"]
+
+[dependencies]
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+thiserror = "2.0.12"
